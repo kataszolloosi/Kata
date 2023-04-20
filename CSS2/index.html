@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex</title>
+    <style>
+        ul {
+            background-color: steelblue;
+            display: flex;
+            flex-direction: row;
+            flex-direction:column;
+            flex-direction:row-reverse;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 100px;
+        }
+
+        ul li {
+            list-style-type: none;
+            color: #fcfcf0;
+            background-color: #f8ab0b;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+            order: 2;
+            flex-grow: 1;
+        }
+
+        ul li.active {
+            background-color: #b53d2c;
+            order: 1;
+           flex-grow: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>File</li>
+        <li>Edit</li>
+        <li class="active">Selection</li>
+        <li>View</li>
+    </ul>
+</body>
+
+</html>

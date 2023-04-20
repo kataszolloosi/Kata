@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://www.example.com">
+    <title>Formular</title>
+</head>
+<body>
+    <form action="/blog/save" method="post">
+        <label>Vorname</label>
+        <input type="text" name="firstname" value="Kata" maxlength="10">
+         <!-- maxlength=wie viel karakter kann ich einschreiben -->
+        <br>
+         <label>Vorname</label>
+        <input type="text" name="firstname" placeholder="Kata" maxlength="10">
+        <br>
+        <label>Telefon</label>
+        <input type="text" name="phone" placeholder="1223-33333-2545" maxlength="1">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <br>
+        <label>AGB gelesen></label>
+        <input checked type="checkbox" name="checkbox">
+        <br>
+        <label>Foto upload</label>
+        <input type="file" name="foto">
+        <br>
+        <select name="country" multiple>
+            <option value="AT">Austira</option>
+            <option value="DE">Germany</option>
+            <option value="HU">Hungary</option>
+            <option value="GB">England</option>
+            <option value="US">USA</option>
+        </select>
+        <div>
+            <input type="radio" name="sex" value="F"> Weiblich
+            <input type="radio" name="sex" value="M"> Männlich
+            <input type="radio" name="sex" value="D"> Diverse
+        </div>
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+       
+    </form>
+</body>
+</html>
