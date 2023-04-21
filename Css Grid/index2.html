@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            min-height: 300px;
+            grid-template-columns: 20% 30% 30% 20%;
+            grid-template-rows: 200px 100px 200px;
+            color: #f6f3f3;
+            font-family: sans-serif;
+            font-weight: 400;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #b53d2c;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        article {
+            background-color: #f8ab0b;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        aside {
+            background-color: #57d6cc;
+            justify-self: center;
+            align-self:end;
+        }
+
+        footer {
+            background-color: #10518c;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

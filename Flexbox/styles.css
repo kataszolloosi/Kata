@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    background-color: pink
+}
+
+header,
+nav,
+main {
+    padding: 10px;
+}
+
+section {
+    display: flex;
+}
+
+nav {
+    background-color: azure;
+
+    width: 196px;
+}
+
+main {
+    background-color: darkseagreen;
+}
+
+aside {
+    background-color: bisque;
+    width: 256px;
+}
+
+aside {
+    background-color: bisque;
+}
+
+footer {
+    display: flex;
+    background-color: pink;
+}
+
+ul {
+    list-style: none;
+}

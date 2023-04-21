@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 25% auto 25%;
+             grid-template-rows: 25% 100px auto;
+             grid-template-areas:
+            "header  header  aside"
+             "article article aside"
+             ".       footer  footer";
+            height: 400px;
+            align-items: center;
+            justify-content: space-evenly;
+            /*grid-column-gap: 10px;
+            grid-row-gap:10px;*/
+            grid-gap: 10px;
+            color: #f6f3f3;
+            font-family: sans-serif;
+            font-weight: 400;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #b53d2c;
+            grid-area: header;
+        }
+
+        article {
+            background-color: #f8ab0b;
+            grid-area: article;
+        }
+
+        aside {
+            background-color: #57d6cc;
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: #10518c;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
